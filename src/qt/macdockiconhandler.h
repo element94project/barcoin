@@ -6,8 +6,12 @@
 class QMenu;
 class QIcon;
 class QWidget;
-class objc_object;
-
++
+ +#ifdef __OBJC__
+ +@class DockIconClickEventHandler;
+ +#else
+ +class DockIconClickEventHandler;
+ +#endif
 /** Macintosh-specific dock icon handler.
  */
 class MacDockIconHandler : public QObject
