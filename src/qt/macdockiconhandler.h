@@ -31,7 +31,7 @@ public slots:
 private:
     MacDockIconHandler();
 
-    objc_object *m_dockIconClickEventHandler;
++    DockIconClickEventHandler *m_dockIconClickEventHandler;
     QWidget *m_dummyWidget;
     QMenu *m_dockMenu;
 };
